@@ -3,7 +3,7 @@ import random
 def generate_random_list(n):
     """Генерирует список из n случайных чисел в диапазоне от 5 до 1000."""
     min_value = 5
-    max_value = n * 100  # № по журналу * 100
+    max_value = (n - 10) * 100  # № по журналу * 100
     print("Минимальный элемент в списке:", min_value, ", максимальный элемент:", max_value)
     return [random.randint(min_value, max_value) for _ in range(n)]
 
